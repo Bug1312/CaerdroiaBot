@@ -1,0 +1,19 @@
+{
+  "Guilds": {
+    "Main_Guild_ID": "703470275865608253"
+  },
+  "Channels": {
+    "Rules_Channel_ID": "703474459075543090",
+    "Census_Channel_ID": "826765107122929674",
+    "Join_Message_Channel_ID": "703470275865608256",
+    "Leave_Message_Channel_ID": "717478690736439328",
+    "Admin_Bot_Channel_ID": "717346780936798279"
+  },
+  "Roles": {
+    "Announcement_Role_ID": "717475253038743572",
+    "Admin_Role_ID": "717215508742799391"
+  },
+  "Messages": {
+    "Announcement_Role_Message_ID": "717479944019771464"
+  }
+}

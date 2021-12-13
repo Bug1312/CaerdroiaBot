@@ -1,0 +1,203 @@
+/* this file is loaded by index.html and styles the page */
+
+form {
+  margin-right: auto;
+  margin-left: auto;
+  background: linear-gradient(to bottom, #2f353a, #292e33);
+  display: grid;
+  grid-gap: 1em;
+  padding: 1em;
+  max-width: 40ch;
+  border-radius: 5px;
+}
+
+#form-text {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+textarea {
+  background-color: #4f545c;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid silver;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 90%;
+  height: 100px;
+  resize: none;
+  color: white;
+  border-radius: 5px;
+font-family: sans-serif;
+}
+
+form button {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #2f353a;
+  border: 2px solid white;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-size: inherit;
+  line-height: 1.4em;
+  padding: 0.25em 1em;
+  max-width: 20ch;
+  color: #e3e5e8;
+}
+
+form button:hover {
+  background-color: #e3e5e8;
+  color: black;
+}
+
+footer {
+  margin-top: 3em;
+  padding-top: 1.5em;
+}
+
+.bottom {
+  font-family: "Comic Sans MS";
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+}
+h2 {
+  margin-right: auto;
+  margin-left: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  height: 90vh;
+  margin: 10vh auto 0 auto;
+  background: linear-gradient(to bottom right, #444455, black, #555566);
+}
+
+main {
+  position: relative;
+  width: 15vw;
+  margin: auto;
+}
+
+.rod {
+  transform-origin: center top;
+  animation-name: swing, fade;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  width: 15vw;
+  height: 46vw;
+  position: absolute;
+  will-change: transform;
+  contain: strict;
+}
+
+.bob {
+  position: absolute;
+  bottom: 0;
+  border: 4vw solid;
+  border-radius: 50%;
+  width: 6vw;
+  height: 6vw;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 5vw;
+}
+
+.pendulum1 {
+  animation-duration: 2.15s, 2.4s;
+  z-index: -1;
+}
+
+.pendulum1 > .bob {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+.pendulum2 {
+  animation-duration: 2.2s, 2.35s;
+  z-index: -2;
+}
+
+.pendulum2 > .bob {
+  color: #ff8800;
+  border-color: #ff8800;
+}
+
+.pendulum3 {
+  animation-duration: 2.25s, 2.3s;
+  z-index: -3;
+}
+
+.pendulum3 > .bob {
+  color: #ffff00;
+  border-color: #ffff00;
+}
+
+.pendulum4 {
+  animation-duration: 2.3s, 2.25s;
+  z-index: -4;
+}
+
+.pendulum4 > .bob {
+  color: #00ff00;
+  border-color: #00ff00;
+}
+
+.pendulum5 {
+  animation-duration: 2.35s, 2.2s;
+  z-index: -5;
+}
+
+.pendulum5 > .bob {
+  color: #0000ff;
+  border-color: #0000ff;
+}
+
+.pendulum6 {
+  animation-duration: 2.4s, 2.15s;
+  z-index: -6;
+}
+
+.pendulum6 > .bob {
+  color: #4b0082;
+  border-color: #4b0082;
+}
+
+.pendulum7 {
+  animation-duration: 2.45s, 2.1s;
+  z-index: -7;
+}
+
+.pendulum7 > .bob {
+  color: #7f00ff;
+  border-color: #7f00ff;
+}
+
+@keyframes swing {
+  from {
+    transform: rotate(-85deg);
+  }
+  to {
+    transform: rotate(85deg);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
